@@ -68,9 +68,11 @@ var filteredEvents = eventArray;
 
 // Setting up the selector for individual cities
 function buildDropDown() {
+    let curEvents = JSON.parse(sessionStorage.getItem("eventArray")) || eventArray;
+
     let eventDD = document.getElementById("eventDropDown");
     //
-    let distinctEvents = [...new Set(eventArray.map((event) => event.city))];
+    let distinctEvents = [...new Set(curEvents.map((event) => event.city))];
     let linkHTMLEnd = '<div class="dropdown-divider"></div><a class="dropdown-item" onclick="getEvents(this)" data-string="All" >All</a>';
     resultsHTML = "";
 
@@ -108,7 +110,7 @@ function displayStats() {
     average = total / filteredEvents.length;
     document.getElementById("total").innerHTML = total.toLocaleString();
     document.getElementById("most").innerHTML = most.toLocaleString();
-    document.getElementById("least").innerHTML = least//.toLocaleString();
+    document.getElementById("least").innerHTML = least.toLocaleString();
     document.getElementById("average").innerHTML = average.toLocaleString(
         undefined, {
             minimumFractionDigits: 0,
@@ -119,7 +121,7 @@ function displayStats() {
 
 function getEvents(element) {
     let city = element.getAttribute("data-string");
-    let curEvents = JSON.parse(localStorage.getItem("eventArray")) || eventArray;
+    let curEvents = JSON.parse(sessionStorage.getItem("eventArray")) || eventArray;
 
     filteredEvents = curEvents;
     document.getElementById("statsHeader").innerHTML = `Stats For ${city} Events`;
@@ -158,7 +160,7 @@ function addEvent() {
     obj["event"] = document.getElementById("eventName").value;
     obj["city"] = document.getElementById("eventCity").value;
     obj["state"] = document.getElementById("eventState").value;
-    obj["attendance"] = document.getElementById("eventAttend").value;
+    obj["attendance"] = parseInt(document.getElementById("eventAttend").value);
     obj["date"] = document.getElementById("eventDate").value;
 
     eventList.push(obj);
