@@ -1,0 +1,232 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 200px;
+    background: #355C7D;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #C06C84, #6C5B7B, #355C7D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #C06C84, #6C5B7B, #355C7D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #355C7D;
+    color: darkgoldenrod;
+}
+
+
+/* Custom page CSS
+  -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body>.container {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+.row>div {
+    margin-bottom: 15px;
+    align-content: center;
+}
+
+.content {
+    min-height: 300px;
+    background: #dbdfe5;
+}
+
+.content.bg-alt {
+    background: #b4bac0;
+}
+
+.sidebar-top {
+    min-height: 140px;
+    background: #dbdfe7;
+}
+
+.sidebar-bottom {
+    min-height: 145px;
+    background: #7e8aa0;
+    margin-bottom: -15px;
+}
+
+.sidebar,
+.content {
+    min-height: 300px;
+}
+
+.content-top {
+    min-height: 160px;
+    background: #b4bac0;
+}
+
+.content-bottom {
+    min-height: 125px;
+    background: #7e8aa0;
+    margin-bottom: -15px;
+}
+
+.content-bottom.bg-alt {
+    background: #9ca5b6;
+}
+
+@media (max-width: 991px) {
+    .content-bottom {
+        margin-bottom: 15px;
+    }
+
+    .content-bottom.bg-alt {
+        margin-bottom: -15px;
+    }
+}
+
+.intro {
+    background: #7e8aa0;
+    min-height: 250px;
+}
+
+.section {
+    min-height: 150px;
+    background: #dbdfe5;
+}
+
+.section.bg-alt {
+    background: #b4bac0;
+}
+
+.col * {
+    border: 10px;
+    justify-content: center
+}
+
+.col-lg-4 {
+    width: auto;
+    border: 1px solid #2d2d2d;
+    display: grid;
+    justify-content: center;
+}
+
+hr {
+    border: 2px solid darkgoldenrod;
+    border-radius: 3px;
+    border-style: groove;
+    width: 25%;
+}
+
+.table {
+    /* background: #8560A6; */
+    color: #1a5e63;
+    font-weight: 600;
+}
+
+.table tbody tr td {
+    color:#F2B20F;
+    background: #355C7D;
+    border: darkgoldenrod 3px solid;
+    border-style: groove;
+}
+
+#statsHeader {
+    background-color: #f0f3bd;
+    border: darkgoldenrod 3px solid;
+    border-style: groove;
+    color: #F2B20F;
+    color: #21374b;
+}
+
+.table .thead-dark th {
+    margin-top: 50px;
+    color: #21374b;
+    background-color: #f0f3bd;
+    border: 3px solid darkgoldenrod;
+    border-style: groove;
+
+}
+
+tr>th {
+    text-align: center;
+}
+
+#tableBody>tr {
+    object-fit: scale-down;
+    border: darkgoldenrod 2px solid;
+    background: #f0f3bd;
+    border-radius: 3px;
+}
+
+#tableBody>tr>td {
+    /* object-fit: scale-down; */
+    border: darkgoldenrod 3px solid;
+    border-style: groove;
+}
+
+#filterTable {
+    margin-top: 80px;
+}
+
+#filterTable>table>tr>th>td {
+    object-fit: scale-down;
+    border: darkgoldenrod 2px solid;
+    background: #f0f3bd;
+    border-radius: 3px;
+}
+
+#filterTable>table>tr>td {
+    /* object-fit: scale-down; */
+    border: darkgoldenrod 3px solid;
+    border-style: groove;
+}
+
+.modal-content {
+ background-color: #355C7D;
+ color: #F2B20F;
+ font-weight: 600;
+}
+
+.btn-info {
+    border: darkgoldenrod 1px solid;
+    border-style: outset;
+    background: #355C7D;
+}
+
+.dogboy {
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #F2B20F;
+    opacity: 0.9;
+    margin-top: 100px;
+    padding: 0 10px;
+}
