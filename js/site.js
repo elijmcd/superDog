@@ -155,7 +155,7 @@ function getData() {
 
 function addEvent() {
     let eventList = JSON.parse(sessionStorage.getItem("eventArray")) || eventArray;
-
+    
     let obj = {};
     obj["event"] = document.getElementById("eventName").value;
     obj["city"] = document.getElementById("eventCity").value;

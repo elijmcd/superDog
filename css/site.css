@@ -151,7 +151,7 @@ hr {
 }
 
 .table tbody tr td {
-    color:#F2B20F;
+    color: #F2B20F;
     background: #355C7D;
     border: darkgoldenrod 3px solid;
     border-style: groove;
@@ -209,9 +209,9 @@ tr>th {
 }
 
 .modal-content {
- background-color: #355C7D;
- color: #F2B20F;
- font-weight: 600;
+    background-color: #355C7D;
+    color: #F2B20F;
+    font-weight: 600;
 }
 
 .btn-info {
@@ -224,9 +224,83 @@ tr>th {
     margin-top: 50px;
 }
 
-.card {
+/* .card { */
+/* background-color: #F2B20F; */
+/* opacity: 0.9; */
+/* margin-top: 100px; */
+/* padding: 0 10px; */
+/* } */
+
+#introRow {
+    padding-top: 90px;
+    object-position: center;
+}
+
+#introductionCard {
+    opacity: 0.9;
+    background-color: #F2B20F;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    max-width: 90%;
+    padding: 0 10px;
+
+}
+
+#introCardTop {
+    background-color: #F2B20F;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 0 10px;
+
+}
+
+#introCardBase {
+    background-color: #F2B20F;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 0 10px;
+
+}
+
+.col-lg-6.doggy {
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 125px;
+}
+
+.col-lg-6.doggy>img {
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    object-position: center;
+    padding-top: 125px;
+}
+
+#superDogTables {
     background-color: #F2B20F;
     opacity: 0.9;
     margin-top: 100px;
     padding: 0 10px;
+}
+
+.accordion .card {
+    background-color: #F2B20F;
+}
+
+#headingOne>div {
+padding: 0px;
+}
+
+#headingTwo>div {
+    padding: 0px;
+}
+
+.devicons {
+    font-size: 64px;
 }

@@ -14,7 +14,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/devicons.css">
+    <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -51,50 +53,31 @@
     <!-- Begin page content -->
     <main role="main" class="container">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 intro">
-                    <p>
-                        <h1>Super Dog Events: A Coding Challenge</h1>
-                        SuperDog Events is an event company the produces comic cons. The marketing team has
-                        requested a
-                        site the
-                        displays stats from their events. You are given an array of event data to build a site.
-                        <br><br>
-                        <b>Given an array of objects of event data display the following:</b>
-                        <ul>
-                            <li>Total attendance by City</li>
-                            <li>Average Attendance by City</li>
-                            <li>Least attended event by City</li>
-                            <li>Most attended event by City</li>
-                            <li>Show these stats for All Events</li>
-                            <li>
-                                Extra Credit: Add the ability to add additional events. Store the events in local
-                                storage or a database.
-                            </li>
-                        </ul>
-                    </p>
-                    <p><b>Below is the array of data you are given:</b></p>
-                </div>
-                <div class="col-lg-4 col-md-6 data">
-                    <pre>
-                    <code class="language-js">
-[{event: "ComicCon",city: "New York",state: "New York",attendance: 240000,date: "06/01/2017"},
-{event: "ComicCon",city: "New York",state: "New York",attendance: 250000,date: "06/01/2018"},
-{event: "ComicCon",city: "New York",state: "New York",attendance: 257000,date: "06/01/2019"},
-{event: "ComicCon",city: "San Diego",state: "California",attendance: 130000,date: "06/01/2017"},
-{event: "ComicCon",city: "San Diego",state: "California",attendance: 140000,date: "06/01/2018"},
-{event: "ComicCon",city: "San Diego",state: "California",attendance: 150000,date: "06/01/2019"},
-{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 40000,date: "06/01/2017"},
-{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 45000,date: "06/01/2018"},
-{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 50000,date: "06/01/2019"}]
-                        </code>
-                    </pre>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12 doggy">
+            <div class="row" id="introRow">
+                <div class="col-lg-6 doggy">
                     <img src="/img/SuperDogEvents.png" class="img-fluid p-2 ">
                 </div>
-            </div>
-        </div>
+                <div class="col-lg-6 card shadow" id="introductionCard">
+                    <div class="row">
+                        <div class="col-12 card shadow" id="introCardTop">
+                            <hr style="width:100%">
+                            <h1>🐱‍🏍Super Dog Events🐶</h1>
+                            <hr style="width:100%;">
+                            SuperDog Events is an event company the produces comic book conventions. They have requested
+                            an
+                            app to display statistics from their past events. There is a table of initial data to start,
+                            with the
+                            ability for the user to input additional events as desired.
+                            <br><br>
+                        </div>
+                        <div class="col-12 card shadow" id="introCardBase">
+                            <br>
+                            SuperDog Events was created using<br>
+                            <span class="devicons">&#xe636 &#xe649 &#xe647 &#xe650 &#xe64e</span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
     </main>
 
     <footer class="footer">
